@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML Schema - XSD -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="urn:mydomain:message"
+    xmlns:tns="urn:mydomain:message"
+    elementFormDefault="qualified">
+    <xsd:complexType name="MessageType">
+        <xsd:sequence>
+            <xsd:element name="from" type="xsd:string"/>
+            <xsd:element name="to" type="xsd:string"/>
+            <xsd:element name="subject" type="xsd:string"/>
+            <xsd:element name="body" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:int" use="required"/>
+    </xsd:complexType>
+    <xsd:element name="message" type="tns:MessageType"/>
+</xsd:schema>

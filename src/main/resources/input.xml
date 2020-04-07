@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<message xmlns="urn:mydomain:message" id="49532">
+    <from>Alice</from>
+    <to>Bob</to>
+    <subject>Hi</subject>
+    <body>Hi! How are you?</body>
+</message>
